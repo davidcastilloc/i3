@@ -32,15 +32,13 @@ floating_modifier $mod
 #Configuracion para grabar videos...
 for_window [title="XTERM"] resize set 600 0
 for_window [class="^.*"] border pixel 2
-for_window [class=".*"] split toggle #toggles split at each new window
+for_window [class=".*"] split toggle 
 bindsym $mod+shift+q split toggle kill 
-bindsym $mod+e layout toggle split 
 
 # start a terminalLiberation 
 bindsym $mod+Return exec st -f "Hack Nerd Font Mono:style=Regular:size=14"
 #bindsym $mod+Return exec terminator
 # kill focused window
-bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec rofi -show drun -show-icons -font "DejaVu Sans 10"
